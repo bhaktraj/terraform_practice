@@ -1,0 +1,3 @@
+terraform_keypair*
+*.terraform/
+*.terraform.lock.hcl
