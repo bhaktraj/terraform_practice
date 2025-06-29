@@ -3,7 +3,7 @@ variable "ec2_instance_type" {
     type = string
 }
 variable "ec2_instance_size" {
-    default = 8
+    default = 12
     type = number
 }
 variable "ec2_ami" {
