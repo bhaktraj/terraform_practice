@@ -2,3 +2,7 @@ terraform_keypair*
 *.terraform/
 *.terraform.lock.hcl
 terraformwithvar*
+*.tfstate
+*.tfstate.backup
+multiple_ec2
+multiple_ec2.pub
