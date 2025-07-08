@@ -39,15 +39,20 @@ resource "aws_instance" "ec2instance" {
     key_name = aws_key_pair.key_pair.key_name
     security_groups = [aws_security_group.ec2securitygroup.name]
     instance_type = "t2.micro"
-    ami = "ami-0f918f7e67a3323f0"
+    ami = "ami-020cba7c55df1f615" #ubuntu ami and user is ec2-user
 
     root_block_device {
-      volume_size = 8
+      volume_size = 10
       volume_type = "gp3"
     }
 
     tags = {
       Name = "terraform first"
     }
+  
+}
+
+output "public_ip" {
+    value = aws_instance.ec2instance.public_ip
   
 }

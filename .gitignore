@@ -8,3 +8,5 @@ multiple_ec2
 multiple_ec2.pub
 *keypair
 *keypair.pub
+ansible
+ansible.pub
